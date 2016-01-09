@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="twoimages" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image1" translatesAutoresizingMaskIntoConstraints="NO" id="Tg7-xL-X5Z">
+                                <rect key="frame" x="61" y="53" width="240" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image2" translatesAutoresizingMaskIntoConstraints="NO" id="tpf-dp-V89">
+                                <rect key="frame" x="67" y="313" width="240" height="262"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27h-jR-bRG">
+                                <rect key="frame" x="107" y="219" width="149" height="30"/>
+                                <state key="normal" title="Hide Image 1"/>
+                                <connections>
+                                    <action selector="Action1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ANk-kj-Ja6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJn-LP-ZZL" userLabel="Button2">
+                                <rect key="frame" x="125" y="608" width="113" height="30"/>
+                                <state key="normal" title="Hide Image 2"/>
+                                <connections>
+                                    <action selector="Action2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZeS-54-f5I"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image1" translatesAutoresizingMaskIntoConstraints="NO" id="ksV-A9-mcH" userLabel="BigImage1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image2" translatesAutoresizingMaskIntoConstraints="NO" id="OIR-ec-9fQ" userLabel="BigImage2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="BigImage1" destination="ksV-A9-mcH" id="2b1-QJ-vLt"/>
+                        <outlet property="BigImage2" destination="OIR-ec-9fQ" id="1v7-Jb-eGr"/>
+                        <outlet property="Button1" destination="27h-jR-bRG" id="Trh-Ho-rWQ"/>
+                        <outlet property="Button2" destination="rJn-LP-ZZL" id="MbU-kP-37P"/>
+                        <outlet property="Image1" destination="Tg7-xL-X5Z" id="64k-wZ-hub"/>
+                        <outlet property="Image2" destination="tpf-dp-V89" id="Aen-Bt-9pI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244.5" y="304.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image1" width="1086" height="724"/>
+        <image name="Image2" width="724" height="1086"/>
+    </resources>
+</document>
